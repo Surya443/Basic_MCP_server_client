@@ -103,6 +103,6 @@ You might want to refer to these documentation URLs before starting . Did this p
 
  - [brave api docs](https://api-dashboard.search.brave.com/app/documentation/web-search/get-started)
  - [brave package installation through UV](https://brave-search-python-client.readthedocs.io/en/latest/)
- - [](https://modelcontextprotocol.io/docs/tools/inspector)
- - [](https://github.com/modelcontextprotocol/inspector)
- - [](https://www.npmjs.com/package/@modelcontextprotocol/server-filesystem)
+ - [https://modelcontextprotocol.io/docs/tools/inspector](https://modelcontextprotocol.io/docs/tools/inspector)
+ - [https://github.com/modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector)
+ - [https://www.npmjs.com/package/@modelcontextprotocol/server-filesystem](https://www.npmjs.com/package/@modelcontextprotocol/server-filesystem)
