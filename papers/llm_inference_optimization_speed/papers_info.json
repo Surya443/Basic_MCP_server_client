@@ -1,0 +1,127 @@
+{
+  "2503.13427v1": {
+    "title": "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference",
+    "authors": [
+      "Maximilian Beck",
+      "Korbinian P\u00f6ppel",
+      "Phillip Lippe",
+      "Richard Kurle",
+      "Patrick M. Blies",
+      "G\u00fcnter Klambauer",
+      "Sebastian B\u00f6ck",
+      "Sepp Hochreiter"
+    ],
+    "summary": "Recent breakthroughs in solving reasoning, math and coding problems with\nLarge Language Models (LLMs) have been enabled by investing substantial\ncomputation budgets at inference time. Therefore, inference speed is one of the\nmost critical properties of LLM architectures, and there is a growing need for\nLLMs that are efficient and fast at inference. Recently, LLMs built on the\nxLSTM architecture have emerged as a powerful alternative to Transformers,\noffering linear compute scaling with sequence length and constant memory usage,\nboth highly desirable properties for efficient inference. However, such\nxLSTM-based LLMs have yet to be scaled to larger models and assessed and\ncompared with respect to inference speed and efficiency. In this work, we\nintroduce xLSTM 7B, a 7-billion-parameter LLM that combines xLSTM's\narchitectural benefits with targeted optimizations for fast and efficient\ninference. Our experiments demonstrate that xLSTM 7B achieves performance on\ndownstream tasks comparable to other similar-sized LLMs, while providing\nsignificantly faster inference speeds and greater efficiency compared to Llama-\nand Mamba-based LLMs. These results establish xLSTM 7B as the fastest and most\nefficient 7B LLM, offering a solution for tasks that require large amounts of\ntest-time computation. Our work highlights xLSTM's potential as a foundational\narchitecture for methods building on heavy use of LLM inference. Our model\nweights, model code and training code are open-source.",
+    "pdf_url": "http://arxiv.org/pdf/2503.13427v1",
+    "published": "2025-03-17"
+  },
+  "2402.15678v2": {
+    "title": "Minions: Accelerating Large Language Model Inference with Aggregated Speculative Execution",
+    "authors": [
+      "Siqi Wang",
+      "Hailong Yang",
+      "Xuezhu Wang",
+      "Tongxuan Liu",
+      "Pengbo Wang",
+      "Xuning Liang",
+      "Kejie Ma",
+      "Tianyu Feng",
+      "Xin You",
+      "Yongjun Bao",
+      "Yi Liu",
+      "Zhongzhi Luan",
+      "Depei Qian"
+    ],
+    "summary": "Large language models (LLM) have recently attracted surging interest due to\ntheir outstanding capabilities across various domains. However, enabling\nefficient LLM inference is challenging due to its autoregressive decoding that\ngenerates tokens only one at a time. Although research works apply pruning or\nquantization to speed up LLM inference, they typically require fine-tuning the\nLLM, incurring significant time and economic costs. Meanwhile, speculative\ndecoding has been proposed to use small speculative models (SSMs) to accelerate\nthe inference of LLM. However, the low acceptance rate of SSM and the high\nverification cost of LLM prohibit further performance improvement of inference.\nIn this paper, we propose Minions, an LLM inference system that accelerates LLM\ninference with a collective and adaptive speculative generation. Specifically,\nMinions proposes a majority-voted mechanism to leverage multiple SSMs to\njointly speculate the outputs of LLM, which improves the inference performance\nwithout introducing prohibitive computation costs for LLM. To better trade off\nthe number of tokens speculated from SSM and the verification cost of LLM,\nMinions proposes an adaptive mechanism to dynamically determine the optimal\nspeculation length of SSM, which can achieve better inference performance\nacross different models, datasets, and hyper-parameters. In addition, Minions\ndecouples the SSM decoding and LLM verification efficiently and adopts a\npipelined execution mechanism to further improve the inference performance of\nLLM. By comparing with the state-of-the-art LLM inference systems, we\ndemonstrate that Minions can achieve higher inference throughput and lower\ninference time.",
+    "pdf_url": "http://arxiv.org/pdf/2402.15678v2",
+    "published": "2024-02-24"
+  },
+  "2403.20041v3": {
+    "title": "Transformer-Lite: High-efficiency Deployment of Large Language Models on Mobile Phone GPUs",
+    "authors": [
+      "Luchang Li",
+      "Sheng Qian",
+      "Jie Lu",
+      "Lunxi Yuan",
+      "Rui Wang",
+      "Qin Xie"
+    ],
+    "summary": "The Large Language Model (LLM) is widely employed for tasks such as\nintelligent assistants, text summarization, translation, and multi-modality on\nmobile phones. However, the current methods for on-device LLM deployment\nmaintain slow inference speed, which causes poor user experience. To facilitate\nhigh-efficiency LLM deployment on device GPUs, we propose four optimization\ntechniques: (a) a symbolic expression-based approach to support dynamic shape\nmodel inference; (b) operator optimizations and execution priority setting to\nenhance inference speed and reduce phone lagging; (c) an FP4 quantization\nmethod termed M0E4 to reduce dequantization overhead; (d) a sub-tensor-based\ntechnique to eliminate the need for copying KV cache after LLM inference.\nFurthermore, we implement these methods in our mobile inference engine,\nTransformer-Lite, which is compatible with both Qualcomm and MTK processors. We\nevaluated Transformer-Lite's performance using LLMs with varied architectures\nand parameters ranging from 2B to 14B. Specifically, we achieved prefill and\ndecoding speeds of 121 token/s and 14 token/s for ChatGLM2 6B, and 330 token/s\nand 30 token/s for smaller Gemma 2B, respectively. Compared with CPU-based\nFastLLM and GPU-based MLC-LLM, our engine attains over 10x speedup for the\nprefill speed and 2~3x speedup for the decoding speed.",
+    "pdf_url": "http://arxiv.org/pdf/2403.20041v3",
+    "published": "2024-03-29"
+  },
+  "2502.11880v1": {
+    "title": "Bitnet.cpp: Efficient Edge Inference for Ternary LLMs",
+    "authors": [
+      "Jinheng Wang",
+      "Hansong Zhou",
+      "Ting Song",
+      "Shijie Cao",
+      "Yan Xia",
+      "Ting Cao",
+      "Jianyu Wei",
+      "Shuming Ma",
+      "Hongyu Wang",
+      "Furu Wei"
+    ],
+    "summary": "The advent of 1-bit large language models (LLMs), led by BitNet b1.58, has\nspurred interest in ternary LLMs. Despite this, research and practical\napplications focusing on efficient edge inference for ternary LLMs remain\nscarce. To bridge this gap, we introduce Bitnet.cpp, an inference system\noptimized for BitNet b1.58 and ternary LLMs. Given that mixed-precision matrix\nmultiplication (mpGEMM) constitutes the bulk of inference time in ternary LLMs,\nBitnet.cpp incorporates a novel mpGEMM library to facilitate\nsub-2-bits-per-weight, efficient and lossless inference. The library features\ntwo core solutions: Ternary Lookup Table (TL), which addresses spatial\ninefficiencies of previous bit-wise methods, and Int2 with a Scale (I2_S),\nwhich ensures lossless edge inference, both enabling high-speed inference. Our\nexperiments show that Bitnet.cpp achieves up to a 6.25x increase in speed over\nfull-precision baselines and up to 2.32x over low-bit baselines, setting new\nbenchmarks in the field. Additionally, we expand TL to element-wise lookup\ntable (ELUT) for low-bit LLMs in the appendix, presenting both theoretical and\nempirical evidence of its considerable potential. Bitnet.cpp is publicly\navailable at https://github.com/microsoft/BitNet/tree/paper , offering a\nsophisticated solution for the efficient and practical deployment of edge LLMs.",
+    "pdf_url": "http://arxiv.org/pdf/2502.11880v1",
+    "published": "2025-02-17"
+  },
+  "2404.09336v1": {
+    "title": "Self-Selected Attention Span for Accelerating Large Language Model Inference",
+    "authors": [
+      "Tian Jin",
+      "Wanzin Yazar",
+      "Zifei Xu",
+      "Sayeh Sharify",
+      "Xin Wang"
+    ],
+    "summary": "Large language models (LLMs) can solve challenging tasks. However, their\ninference computation on modern GPUs is highly inefficient due to the\nincreasing number of tokens they must attend to as they generate new ones. To\naddress this inefficiency, we capitalize on LLMs' problem-solving capabilities\nto optimize their own inference-time efficiency. We demonstrate with two\nspecific tasks: (a) evaluating complex arithmetic expressions and (b)\nsummarizing news articles. For both tasks, we create custom datasets to\nfine-tune an LLM. The goal of fine-tuning is twofold: first, to make the LLM\nlearn to solve the evaluation or summarization task, and second, to train it to\nidentify the minimal attention spans required for each step of the task. As a\nresult, the fine-tuned model is able to convert these self-identified minimal\nattention spans into sparse attention masks on-the-fly during inference. We\ndevelop a custom CUDA kernel to take advantage of the reduced context to attend\nto. We demonstrate that using this custom CUDA kernel improves the throughput\nof LLM inference by 28%. Our work presents an end-to-end demonstration showing\nthat training LLMs to self-select their attention spans speeds up\nautoregressive inference in solving real-world tasks.",
+    "pdf_url": "http://arxiv.org/pdf/2404.09336v1",
+    "published": "2024-04-14"
+  },
+  "2504.03360v1": {
+    "title": "Sustainable LLM Inference for Edge AI: Evaluating Quantized LLMs for Energy Efficiency, Output Accuracy, and Inference Latency",
+    "authors": [
+      "Erik Johannes Husom",
+      "Arda Goknil",
+      "Merve Astekin",
+      "Lwin Khin Shar",
+      "Andre K\u00e5sen",
+      "Sagar Sen",
+      "Benedikt Andreas Mithassel",
+      "Ahmet Soylu"
+    ],
+    "summary": "Deploying Large Language Models (LLMs) on edge devices presents significant\nchallenges due to computational constraints, memory limitations, inference\nspeed, and energy consumption. Model quantization has emerged as a key\ntechnique to enable efficient LLM inference by reducing model size and\ncomputational overhead. In this study, we conduct a comprehensive analysis of\n28 quantized LLMs from the Ollama library, which applies by default\nPost-Training Quantization (PTQ) and weight-only quantization techniques,\ndeployed on an edge device (Raspberry Pi 4 with 4GB RAM). We evaluate energy\nefficiency, inference performance, and output accuracy across multiple\nquantization levels and task types. Models are benchmarked on five standardized\ndatasets (CommonsenseQA, BIG-Bench Hard, TruthfulQA, GSM8K, and HumanEval), and\nwe employ a high-resolution, hardware-based energy measurement tool to capture\nreal-world power consumption. Our findings reveal the trade-offs between energy\nefficiency, inference speed, and accuracy in different quantization settings,\nhighlighting configurations that optimize LLM deployment for\nresource-constrained environments. By integrating hardware-level energy\nprofiling with LLM benchmarking, this study provides actionable insights for\nsustainable AI, bridging a critical gap in existing research on energy-aware\nLLM deployment.",
+    "pdf_url": "http://arxiv.org/pdf/2504.03360v1",
+    "published": "2025-04-04"
+  },
+  "2408.01050v1": {
+    "title": "The Impact of Hyperparameters on Large Language Model Inference Performance: An Evaluation of vLLM and HuggingFace Pipelines",
+    "authors": [
+      "Matias Martinez"
+    ],
+    "summary": "The recent surge of open-source large language models (LLMs) enables\ndevelopers to create AI-based solutions while maintaining control over aspects\nsuch as privacy and compliance, thereby providing governance and ownership of\nthe model deployment process. To utilize these LLMs, inference engines are\nneeded. These engines load the model's weights onto available resources, such\nas GPUs, and process queries to generate responses. The speed of inference, or\nperformance, of the LLM, is critical for real-time applications, as it computes\nmillions or billions of floating point operations per inference. Recently,\nadvanced inference engines such as vLLM have emerged, incorporating novel\nmechanisms such as efficient memory management to achieve state-of-the-art\nperformance. In this paper, we analyze the performance, particularly the\nthroughput (tokens generated per unit of time), of 20 LLMs using two inference\nlibraries: vLLM and HuggingFace's pipelines. We investigate how various\nhyperparameters, which developers must configure, influence inference\nperformance. Our results reveal that throughput landscapes are irregular, with\ndistinct peaks, highlighting the importance of hyperparameter optimization to\nachieve maximum performance. We also show that applying hyperparameter\noptimization when upgrading or downgrading the GPU model used for inference can\nimprove throughput from HuggingFace pipelines by an average of 9.16% and 13.7%,\nrespectively.",
+    "pdf_url": "http://arxiv.org/pdf/2408.01050v1",
+    "published": "2024-08-02"
+  },
+  "2408.00008v2": {
+    "title": "ScaleLLM: A Resource-Frugal LLM Serving Framework by Optimizing End-to-End Efficiency",
+    "authors": [
+      "Yuhang Yao",
+      "Han Jin",
+      "Alay Dilipbhai Shah",
+      "Shanshan Han",
+      "Zijian Hu",
+      "Yide Ran",
+      "Dimitris Stripelis",
+      "Zhaozhuo Xu",
+      "Salman Avestimehr",
+      "Chaoyang He"
+    ],
+    "summary": "Large language models (LLMs) have surged in popularity and are extensively\nused in commercial applications, where the efficiency of model serving is\ncrucial for the user experience. Most current research focuses on optimizing\nindividual sub-procedures, e.g. local inference and communication, however,\nthere is no comprehensive framework that provides a holistic system view for\noptimizing LLM serving in an end-to-end manner. In this work, we conduct a\ndetailed analysis to identify major bottlenecks that impact end-to-end latency\nin LLM serving systems. Our analysis reveals that a comprehensive LLM serving\nendpoint must address a series of efficiency bottlenecks that extend beyond LLM\ninference. We then propose ScaleLLM, an optimized system for resource-efficient\nLLM serving. Our extensive experiments reveal that with 64 concurrent requests,\nScaleLLM achieves a 4.3x speed up over vLLM and outperforms state-of-the-arts\nwith 1.5x higher throughput.",
+    "pdf_url": "http://arxiv.org/pdf/2408.00008v2",
+    "published": "2024-07-23"
+  }
+}
