@@ -41,7 +41,7 @@ uv add mcp request brave-search-python-client arxiv nest-asyncio psutil
 
 ## Usage
 
-1. run the arxiv server/ brave server without client using mcp inspector to check if tools, resources and prompts are running perfectly (local):
+1. Run the arxiv server/ brave server without client using mcp inspector to check if tools, resources and prompts are running perfectly (local):
 ```bash
 #arxiv server
 npx @modelcontextprotocol/inspector uv run server.py
@@ -51,12 +51,13 @@ npx @modelcontextprotocol/inspector uv run server.py
 #brave server
 npx @modelcontextprotocol/inspector uv run brave_server.py
 ```
-open the url to access the mcp inspector
+2. Open the url to access the mcp inspector
 
 ![mcp inpector for arxiv server](assets/inspector_arxiv.png)
+
 ![mcp inspector fro brave server](assets/inspector_brave.png)
 
-2. Once your servers are running fine, you will need  clients to connect to these servers(It's important to note that client-server connection can be one-one and also many-many) inorder for you to give context to the llm. Here we have two chatbots(host) that uses claude sonnet to have a conversational interface.
+3. Once your servers are running fine, you will need  clients to connect to these servers(It's important to note that client-server connection can be one-one and also many-many) inorder for you to give context to the llm. Here we have two chatbots(host) that uses claude sonnet to have a conversational interface.
     - mcp_chatbot.py    :  connects only with arxiv server and uses arxiv's tool,resources and prompts
     - mcp_chatbot_v2.py :  connects with arxiv,brave server and has filesystem operations
 
@@ -87,9 +88,12 @@ uv run mcp_chatbot_v2.py  #or 'uv run mcp_chatbot.py' to connect to only arxiv s
 
 ![](assets/output_server3.png)
 
-3. Blogs/Article being printed out and written
+3. Blogs/Article being printed out 
 ![](assets/output-server4.png)
+
+4. Writting the summarized blog using file operation tools
+![](assets/output_server5.png)
 
 
 lol I tried generating a readme file for this project by giving the entire codebase as context, but wasn't able to because it exceeded input token limit(Free tier Anthropic api key). But it is possible to pull this off if you have a higher tier api key or use large context size models like llama4:scout :) .
-![](assets/output_server5.png)
+![](assets/readme.png)
