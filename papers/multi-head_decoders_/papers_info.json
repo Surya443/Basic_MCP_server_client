@@ -1,0 +1,56 @@
+{
+  "1601.06184v1": {
+    "title": "Joint Source-Channel Decoding of Polar Codes for Language-Based Source",
+    "authors": [
+      "Ying Wang",
+      "Minghai Qin",
+      "Krishna R. Narayanan",
+      "Anxiao Jiang",
+      "Zvonimir Bandic"
+    ],
+    "summary": "We exploit the redundancy of the language-based source to help polar\ndecoding. By judging the validity of decoded words in the decoded sequence with\nthe help of a dictionary, the polar list decoder constantly detects erroneous\npaths after every few bits are decoded. This path-pruning technique based on\njoint decoding has advantages over stand-alone polar list decoding in that most\ndecoding errors in early stages are corrected. In order to facilitate the joint\ndecoding, we first propose a construction of dynamic dictionary using a trie\nand show an efficient way to trace the dictionary during decoding. Then we\npropose a joint decoding scheme of polar codes taking into account both\ninformation from the channel and the source. The proposed scheme has the same\ndecoding complexity as the list decoding of polar codes. A list-size adaptive\njoint decoding is further implemented to largely reduce the decoding\ncomplexity. We conclude by simulation that the joint decoding schemes\noutperform stand-alone polar codes with CRC-aided successive cancellation list\ndecoding by over 0.6 dB.",
+    "pdf_url": "http://arxiv.org/pdf/1601.06184v1",
+    "published": "2016-01-22"
+  },
+  "1901.06791v1": {
+    "title": "SC-Fano Decoding of Polar Codes",
+    "authors": [
+      "Min-Oh Jeong",
+      "Song-Nam Hong"
+    ],
+    "summary": "In this paper, we present a novel decoding algorithm of a polar code, named\nSC-Fano decoding, by appropriately incorporating the Fano sequential decoding\ninto the standard successive-cancellation (SC) decoding. The proposed SC-Fano\ndecoding follows the basic procedures of SC decoding with an additional\noperation to evaluate the reliability (or belief) of a current partial path.\nSpecifically, at every decoding stage, it decides whether to move forward along\na current path or move backward to find a more likelihood path. In this way,\nSC-Fano decoding can address the inherent drawback of SC decoding such as one\nwrong-decision will surely lead to a wrong codeword. Compared with the other\nimprovements of SC decoding as SC-List (SCL) and SC-Stack (SCS) decodings,\nSC-Fano decoding has much lower memory requirement and thus is more suitable\nfor hardware implementations. Also, SC- Fano decoding can be viewed as an\nefficient implementation of SC-Flip (SCF) decoding without the cost of\ncyclic-redundancy-code (CRC). Simulation results show that the proposed SC-Fano\ndecoding significantly enhances the performance of SC decoding with a similar\ncomplexity as well as achieves the performance of SCL decoding with a lower\ncomplexity.",
+    "pdf_url": "http://arxiv.org/pdf/1901.06791v1",
+    "published": "2019-01-21"
+  },
+  "2406.14237v1": {
+    "title": "Finite Alphabet Fast List Decoders for Polar Codes",
+    "authors": [
+      "Syed Aizaz Ali Shah",
+      "Gerhard Bauch"
+    ],
+    "summary": "The so-called fast polar decoding schedules are meant to improve the decoding\nspeed of the sequential-natured successive cancellation list decoders. The\ndecoding speedup is achieved by replacing various parts of the serial decoding\nprocess with efficient special-purpose decoder nodes. This work incorporates\nthe fast decoding schedules for polar codes into their quantized finite\nalphabet decoding. In a finite alphabet successive cancellation list decoder,\nthe log-likelihood ratio computations are replaced with lookup operations on\nlow-resolution integer messages. The lookup tables are designed using the\ninformation bottleneck method. It is shown that the finite alphabet decoders\ncan also leverage the special decoder nodes found in the literature. Besides\ntheir inherent decoding speed improvement, the use of these special decoder\nnodes drastically reduces the number of lookup tables required to perform the\nfinite alphabet decoding. In order to perform quantized decoding using lookup\noperations, the proposed decoders require up to 93% less unique lookup tables\nas compared to the ones that use the conventional successive cancellation\nschedule. Moreover, the proposed decoders exhibit negligible loss in error\ncorrection performance without necessitating alterations to the lookup table\ndesign process.",
+    "pdf_url": "http://arxiv.org/pdf/2406.14237v1",
+    "published": "2024-06-20"
+  },
+  "1108.2861v4": {
+    "title": "Generalized Distributive Law for ML Decoding of Space-Time Block Codes",
+    "authors": [
+      "Lakshmi Prasad Natarajan",
+      "B. Sundar Rajan"
+    ],
+    "summary": "The problem of designing good Space-Time Block Codes (STBCs) with low\nmaximum-likelihood (ML) decoding complexity has gathered much attention in the\nliterature. All the known low ML decoding complexity techniques utilize the\nsame approach of exploiting either the multigroup decodable or the\nfast-decodable (conditionally multigroup decodable) structure of a code. We\nrefer to this well known technique of decoding STBCs as Conditional ML (CML)\ndecoding. In this paper we introduce a new framework to construct ML decoders\nfor STBCs based on the Generalized Distributive Law (GDL) and the Factor-graph\nbased Sum-Product Algorithm. We say that an STBC is fast GDL decodable if the\norder of GDL decoding complexity of the code is strictly less than M^l, where l\nis the number of independent symbols in the STBC, and M is the constellation\nsize. We give sufficient conditions for an STBC to admit fast GDL decoding, and\nshow that both multigroup and conditionally multigroup decodable codes are fast\nGDL decodable. For any STBC, whether fast GDL decodable or not, we show that\nthe GDL decoding complexity is strictly less than the CML decoding complexity.\nFor instance, for any STBC obtained from Cyclic Division Algebras which is not\nmultigroup or conditionally multigroup decodable, the GDL decoder provides\nabout 12 times reduction in complexity compared to the CML decoder. Similarly,\nfor the Golden code, which is conditionally multigroup decodable, the GDL\ndecoder is only half as complex as the CML decoder.",
+    "pdf_url": "http://arxiv.org/pdf/1108.2861v4",
+    "published": "2011-08-14"
+  },
+  "1309.1026v1": {
+    "title": "Parallel Decoders of Polar Codes",
+    "authors": [
+      "Bin Li",
+      "Hui Shen",
+      "David Tse"
+    ],
+    "summary": "In this letter, we propose parallel SC (Successive Cancellation) decoder and\nparallel SC-List decoder for polar codes. The parallel decoder is composed of\nM=2^m(m>=1) component decoders working in parallel and each component decoder\ndecodes a Polar code of a block size of 1/M of the original Polar code.\nTherefore the parallel decoder has M times faster decoding speed. Our\nsimulation results show that the parallel decoder has almost the same\nerror-rate performance as the conventional non-parallel decoder.",
+    "pdf_url": "http://arxiv.org/pdf/1309.1026v1",
+    "published": "2013-09-04"
+  }
+}

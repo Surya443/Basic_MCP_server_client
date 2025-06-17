@@ -1,0 +1,67 @@
+{
+  "2410.02425v1": {
+    "title": "LLM-Pilot: Characterize and Optimize Performance of your LLM Inference Services",
+    "authors": [
+      "Ma\u0142gorzata \u0141azuka",
+      "Andreea Anghel",
+      "Thomas Parnell"
+    ],
+    "summary": "As Large Language Models (LLMs) are rapidly growing in popularity, LLM\ninference services must be able to serve requests from thousands of users while\nsatisfying performance requirements. The performance of an LLM inference\nservice is largely determined by the hardware onto which it is deployed, but\nunderstanding of which hardware will deliver on performance requirements\nremains challenging. In this work we present LLM-Pilot - a first-of-its-kind\nsystem for characterizing and predicting performance of LLM inference services.\nLLM-Pilot performs benchmarking of LLM inference services, under a realistic\nworkload, across a variety of GPUs, and optimizes the service configuration for\neach considered GPU to maximize performance. Finally, using this\ncharacterization data, LLM-Pilot learns a predictive model, which can be used\nto recommend the most cost-effective hardware for a previously unseen LLM.\nCompared to existing methods, LLM-Pilot can deliver on performance requirements\n33% more frequently, whilst reducing costs by 60% on average.",
+    "pdf_url": "http://arxiv.org/pdf/2410.02425v1",
+    "published": "2024-10-03"
+  },
+  "2504.07347v2": {
+    "title": "Throughput-Optimal Scheduling Algorithms for LLM Inference and AI Agents",
+    "authors": [
+      "Yueying Li",
+      "Jim Dai",
+      "Tianyi Peng"
+    ],
+    "summary": "As demand for Large Language Models (LLMs) and AI agents rapidly grows,\noptimizing systems for efficient LLM inference becomes critical. While\nsignificant efforts have focused on system-level engineering, little is\nexplored from a mathematical modeling and queuing perspective.\n  In this paper, we aim to develop the queuing fundamentals for large language\nmodel (LLM) inference, bridging the gap between the queueing theory and LLM\nsystem communities. In particular, we study the throughput aspect in LLM\ninference systems. We prove that a large class of 'work-conserving' scheduling\nalgorithms can achieve maximum throughput for individual inference LLM engine,\nhighlighting 'work-conserving' as a key design principle in practice. In a\nnetwork of LLM agents, work-conserving scheduling alone is insufficient,\nparticularly when facing specific workload structures and multi-class workflows\nthat require more sophisticated scheduling strategies. Evaluations of\nreal-world systems show that Orca and Sarathi-serve are throughput-optimal,\nreassuring practitioners, while FasterTransformer and vanilla vLLM are not\nmaximally stable and should be used with caution. Our results highlight the\nsubstantial benefits that the queueing community can offer in improving LLM\ninference systems and call for more interdisciplinary development.",
+    "pdf_url": "http://arxiv.org/pdf/2504.07347v2",
+    "published": "2025-04-10"
+  },
+  "2411.07447v3": {
+    "title": "Optimizing LLM Inference for Database Systems: Cost-Aware Scheduling for Concurrent Requests",
+    "authors": [
+      "Kyoungmin Kim",
+      "Kijae Hong",
+      "Caglar Gulcehre",
+      "Anastasia Ailamaki"
+    ],
+    "summary": "LLMs are increasingly used inside database systems and in database\napplications for better complexity management and decision-making, where LLM\ninferences require significant GPU costs. LLM inference systems, however, are\nslow compared to database systems, limiting the expansion of the use of LLMs\ninside database systems. This paper first analyzes the LLM inference\nperformance and focuses on a data management issue in LLM inference. We reveal\nthat the root of the problem is the lack of an adequate resource cost model and\noptimization strategy when executing multiple concurrent inference requests. We\nadapt classic database multi-query optimization techniques by introducing cost\nmodels for concurrent inference requests and new scheduling strategies to\noptimize the use of memory resources by concurrent requests, thereby\nsubstantially improving performance.",
+    "pdf_url": "http://arxiv.org/pdf/2411.07447v3",
+    "published": "2024-11-12"
+  },
+  "2505.24643v1": {
+    "title": "Are Optimal Algorithms Still Optimal? Rethinking Sorting in LLM-Based Pairwise Ranking with Batching and Caching",
+    "authors": [
+      "Juan Wisznia",
+      "Cecilia Bola\u00f1os",
+      "Juan Tollo",
+      "Giovanni Marraffini",
+      "Agust\u00edn Gianolini",
+      "Noe Hsueh",
+      "Luciano Del Corro"
+    ],
+    "summary": "We introduce a novel framework for analyzing sorting algorithms in pairwise\nranking prompting (PRP), re-centering the cost model around LLM inferences\nrather than traditional pairwise comparisons. While classical metrics based on\ncomparison counts have traditionally been used to gauge efficiency, our\nanalysis reveals that expensive LLM inferences overturn these predictions;\naccordingly, our framework encourages strategies such as batching and caching\nto mitigate inference costs. We show that algorithms optimal in the classical\nsetting can lose efficiency when LLM inferences dominate the cost under certain\noptimizations.",
+    "pdf_url": "http://arxiv.org/pdf/2505.24643v1",
+    "published": "2025-05-30"
+  },
+  "2503.13427v1": {
+    "title": "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference",
+    "authors": [
+      "Maximilian Beck",
+      "Korbinian P\u00f6ppel",
+      "Phillip Lippe",
+      "Richard Kurle",
+      "Patrick M. Blies",
+      "G\u00fcnter Klambauer",
+      "Sebastian B\u00f6ck",
+      "Sepp Hochreiter"
+    ],
+    "summary": "Recent breakthroughs in solving reasoning, math and coding problems with\nLarge Language Models (LLMs) have been enabled by investing substantial\ncomputation budgets at inference time. Therefore, inference speed is one of the\nmost critical properties of LLM architectures, and there is a growing need for\nLLMs that are efficient and fast at inference. Recently, LLMs built on the\nxLSTM architecture have emerged as a powerful alternative to Transformers,\noffering linear compute scaling with sequence length and constant memory usage,\nboth highly desirable properties for efficient inference. However, such\nxLSTM-based LLMs have yet to be scaled to larger models and assessed and\ncompared with respect to inference speed and efficiency. In this work, we\nintroduce xLSTM 7B, a 7-billion-parameter LLM that combines xLSTM's\narchitectural benefits with targeted optimizations for fast and efficient\ninference. Our experiments demonstrate that xLSTM 7B achieves performance on\ndownstream tasks comparable to other similar-sized LLMs, while providing\nsignificantly faster inference speeds and greater efficiency compared to Llama-\nand Mamba-based LLMs. These results establish xLSTM 7B as the fastest and most\nefficient 7B LLM, offering a solution for tasks that require large amounts of\ntest-time computation. Our work highlights xLSTM's potential as a foundational\narchitecture for methods building on heavy use of LLM inference. Our model\nweights, model code and training code are open-source.",
+    "pdf_url": "http://arxiv.org/pdf/2503.13427v1",
+    "published": "2025-03-17"
+  }
+}
