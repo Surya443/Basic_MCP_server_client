@@ -1,6 +1,6 @@
 # Basic MCP Server-Client Implementation
 
-Just a simple python-based implementation of a Model Context Protocol (arxiv server implementation from deeplearningai's resources).Server and client system that integrates with arXiv and Brave Search for research paper retrieval and processing.
+A simple python-based implementation of a Model Context Protocol (arxiv server implementation from deeplearningai's resources).Server and client system that integrates with arXiv and Brave Search for research paper retrieval and processing. Late to the race but always wanted to implelment this :)
 
 ## Features
 
@@ -95,5 +95,14 @@ uv run mcp_chatbot_v2.py  #or 'uv run mcp_chatbot.py' to connect to only arxiv s
 ![](assets/output_server5.png)
 
 
-lol I tried generating a readme file for this project by giving the entire codebase as context, but wasn't able to because it exceeded input token limit(Free tier Anthropic api key). But it is possible to pull this off if you have a higher tier api key or use large context size models like llama4:scout :) .
+lol I tried generating a readme file for this project by giving the entire codebase as context and it wasn't successful because it exceeded input token limit(Free tier Anthropic api key). BUT it is possible to pull this off if you have a higher tier Anthropic api key or use large context size models like llama4:scout.
 ![](assets/readme.png)
+
+## Documentations/References.
+You might want to refer to these documentation URLs before starting . Did this project in windows and note that installation process of certain packages are different in Linux/macOS
+
+ - [brave api docs](https://api-dashboard.search.brave.com/app/documentation/web-search/get-started)
+ - [brave package installation through UV](https://brave-search-python-client.readthedocs.io/en/latest/)
+ - [](https://modelcontextprotocol.io/docs/tools/inspector)
+ - [](https://github.com/modelcontextprotocol/inspector)
+ - [](https://www.npmjs.com/package/@modelcontextprotocol/server-filesystem)
